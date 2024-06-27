@@ -2,7 +2,6 @@ package gamelogic
 
 import (
 	"fmt"
-	"log"
 	"os"
 	"time"
 
@@ -14,7 +13,6 @@ const logsFile = "game.log"
 const writeToDiskSleep = 1 * time.Second
 
 func WriteLog(gamelog routing.GameLog) error {
-	log.Printf("received game log...")
 	time.Sleep(writeToDiskSleep)
 
 	f, err := os.OpenFile(logsFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)

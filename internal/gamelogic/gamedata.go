@@ -10,8 +10,7 @@ type UnitRank string
 const (
 	RankInfantry  = "infantry"
 	RankCavalry   = "cavalry"
-	RankArtillery = "artillery"
-)
+	RankArtillery = "artillery")
 
 type Unit struct {
 	ID       int
